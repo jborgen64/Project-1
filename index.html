@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 1</title>
-
-    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
-    <link rel="stylesheet" href ="https://www.jsdelivr.com/package/npm/bulma"/>
-    <link rel="stylesheet" href="style.css"/>
-
-</head>
-
-<body>
-    
-    <div class="navbar-menu nuvbur">
-        <div class="navbar-start">
-            <button class="navys navbar-item">Find Books</button>
-            <button class="navys navbar-item">Find Stores</button>
-            <button class="navys navbar-item">Calendar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bulma Lux Theme CDN -->
+    <link
+      rel="stylesheet"
+      href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Book Reso</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p><i class="fas fa-book-reader"></i> BOOK RESO</p>
+          </a>
+          <div class="navbar-burger burger" data-target="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="card-content">
-          <p class="title carousel">A book Carousel can go here</p>
-        </div> 
+        <div id="nav-menu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#hero">
+              Home
+            </a>
+            <a class="navbar-item" href="#recommendations">
+              Recommendations
+            </a>
+            <a class="navbar-item" href="#stores">
+              Stores
+            </a>
+            <a class="navbar-item" href="#">
+              Calendars
+            </a>
+          </div>
+        </div>
       </div>
+    </nav>
 
-      <div class="card">
-        <div class="card-content">
-          <p class="title carousel">A book Calendar can go here</p>
-        </div> 
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-          <p class="title carousel">A book store map can go here</p>
-        </div> 
-      </div>
-
-</body>
-
+    <!-- Font Awesome CDN -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <!-- jQuery CDN -->
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+    ></script>
+  </body>
 </html>
