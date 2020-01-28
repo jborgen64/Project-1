@@ -9,3 +9,7 @@
 option {
     font-size: 24px;
 }
+
+#janReadIt {
+    display: none;
+}
