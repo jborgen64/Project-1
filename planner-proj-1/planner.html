@@ -16,56 +16,61 @@
 </head>
 
 <body>
-    <div id="plannerContainer">
-        <div id="monthsContainer">
-            <div class="months" id="January">Jan</div>
-            <div class="months" id="February">Feb</div>
-            <div class="months" id="March">March</div>
-            <div class="months" id="April">Apr</div>
-            <div class="months" id="May">May</div>
-            <div class="months" id="June">Jun</div>
-            <div class="months" id="July">Jul</div>
-            <div class="months" id="August">Aug</div>
-            <div class="months" id="September">Sept</div>
-            <div class="months" id="October">Oct</div>
-            <div class="months" id="November">Nov</div>
-            <div class="months" id="December">Dec</div>
-        </div>
+
+    <div id="planner">
 
         <div id="plannerNav">
             <div class="tabs">
                 <ul>
-                  <li class="is-active"><a>Jan</a></li>
-                  <li><a>Feb</a></li>
-                  <li><a>Mar</a></li>
-                  <li><a>Apr</a></li>
-                  <li><a>May</a></li>
-                  <li><a>Jun</a></li>
-                  <li><a>Jul</a></li>
-                  <li><a>Aug</a></li>
-                  <li><a>Sep</a></li>
-                  <li><a>Oct</a></li>
-                  <li><a>Nov</a></li>
-                  <li><a>Dec</a></li>
+                  <li><a id="janClick">Jan</a></li>
+                  <li><a id="febClick">Feb</a></li>
+                  <li><a id="marClick">Mar</a></li>
+                  <li><a id="aprClick">Apr</a></li>
+                  <li><a id="mayClick">May</a></li>
+                  <li><a id="junClick">Jun</a></li>
+                  <li><a id="julClick">Jul</a></li>
+                  <li><a id="augClick">Aug</a></li>
+                  <li><a id="sepClick">Sep</a></li>
+                  <li><a id="octClick">Oct</a></li>
+                  <li><a id="novClick">Nov</a></li>
+                  <li><a id="decClick">Dec</a></li>
                 </ul>
               </div>
         </div>
+
+        <div id="bookKeeper">
+            <h1>Type Your Books</h1>
+            <input class="input" id="bookInput" type="text">
+            <button class="button is-primary">Submit</button>
+        </div>
+
+
+        <div id="monthsContainer">
+            <div class="months" id="janDisplay">
+                <h1>January</h1>
+                <input class="textarea"></input>
+            </div>
+            <div class="months" id="febDisplay">Feb</div>
+            <div class="months" id="marDisplay">March</div>
+            <div class="months" id="aprDisplay">Apr</div>
+            <div class="months" id="mayDisplay">May</div>
+            <div class="months" id="junDipslay">Jun</div>
+            <div class="months" id="julDisplay">Jul</div>
+            <div class="months" id="augDisplay">Aug</div>
+            <div class="months" id="sepDisplay">Sept</div>
+            <div class="months" id="octDisplay">Oct</div>
+            <div class="months" id="novDisplay">Nov</div>
+            <div class="months" id="decDisplay">Dec</div>
+        </div>
+
     </div>
 <!-- JS Tags -->
 
-<script 
-    src="planner.js">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-<script
-    defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js">
-</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script
-    crossorigin="anonymous"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    src="https://code.jquery.com/jquery-3.1.1.min.js">
-</script>
+<script  src="planner.js"></script>
 
 </body>
 </html>
