@@ -41,15 +41,22 @@
         <div id="bookKeeper">
             <h1>Type Your Books</h1>
             <input class="input" id="bookInput" type="text">
-            <button class="button is-primary">Submit</button>
+            <button class="button is-primary" id="bookSubmit">Submit</button>
         </div>
 
 
         <div id="monthsContainer">
+            
             <div class="months" id="janDisplay">
                 <h1>January</h1>
-                <input class="textarea"></input>
+                <div class="bookDisp">
+                    <div class="select is-multiple">
+                        <select multiple size="4" id="janBookHolder"></select>
+                        <button class="button is-primary" id="readIt">Read It</button>
+                    </div>
+                </div>
             </div>
+
             <div class="months" id="febDisplay">Feb</div>
             <div class="months" id="marDisplay">March</div>
             <div class="months" id="aprDisplay">Apr</div>
