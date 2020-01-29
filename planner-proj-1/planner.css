@@ -13,3 +13,20 @@ option {
 #janReadIt {
     display: none;
 }
+
+h1 {
+    margin: 20px;
+}
+
+.input {
+    margin: 10px;
+}
+
+#monthsContainer {
+    width: 500px;
+
+}
+
+#janBookHolder {
+    border: none;
+}
