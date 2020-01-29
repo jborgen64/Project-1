@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bulma Lux Theme CDN -->
+    <link
+      rel="stylesheet"
+      href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- CDN and Plugins for Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+
+    <title>Book Reso</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p><i class="fas fa-book-reader"></i> BOOK RESO</p>
+          </a>
+          <div class="navbar-burger burger" data-target="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="nav-menu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#hero">
+              Home
+            </a>
+            <a class="navbar-item" href="#recommendations">
+              Recommendations
+            </a>
+            <a class="navbar-item" href="#stores">
+              Stores
+            </a>
+            <a class="navbar-item" href="#">
+              Calendars
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id='map'></div>
+
+    <!-- maps.js -->
+    <script src="./assets/js/maps.js"></script>
+    <!-- Font Awesome CDN -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <!-- jQuery CDN -->
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+    ></script>
+  </body>
+</html>
