@@ -89,95 +89,101 @@ $("#decClick").on("click", function() {
 //Jan Books to be saved
 $("#janBookSubmit").on("click", function() {
     var book = $("#janBookInput").val();
-    var janBookSaved = $("<option>").append(book);
+    var janBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
     $("#janBookHolder").prepend(janBookSaved);
     $("#janBookHolder").show(500);
+
+    //if book button is clicked
+   // $(janBookSaved).on("click", function() {
+    //    var notes = $("<textarea>").addClass("textarea");
+      //  $("#janBookNotes").append(notes);
+   // })
 });
 
 //Feb Books to be saved
 $("#febBookSubmit").on("click", function() {
     var book = $("#febBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#febBookHolder").prepend(bookSaved);
+    var febBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#febBookHolder").prepend(febBookSaved);
     $("#febBookHolder").show(500);
 });
 
 //Mar Books to be saved
 $("#marBookSubmit").on("click", function() {
     var book = $("#marBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#marBookHolder").prepend(bookSaved);
+    var marBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#marBookHolder").prepend(marBookSaved);
     $("#marBookHolder").show(500);
 });
 
 //Apr Books to be saved
 $("#aprBookSubmit").on("click", function() {
     var book = $("#aprBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#aprBookHolder").prepend(bookSaved);
+    var aprBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#aprBookHolder").prepend(aprBookSaved);
     $("#aprBookHolder").show(500);
 });
 
 //May Books to be saved
 $("#mayBookSubmit").on("click", function() {
     var book = $("#mayBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#mayBookHolder").prepend(bookSaved);
+    var mayBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#mayBookHolder").prepend(mayBookSaved);
     $("#mayBookHolder").show(500);
 });
 
 //Jun Books to be saved
 $("#junBookSubmit").on("click", function() {
     var book = $("#junBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#junBookHolder").prepend(bookSaved);
+    var junBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#junBookHolder").prepend(junBookSaved);
     $("#junBookHolder").show(500);
 });
 
 //Jul Books to be saved
 $("#julBookSubmit").on("click", function() {
     var book = $("#julBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#julBookHolder").prepend(bookSaved);
+    var julBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#julBookHolder").prepend(julBookSaved);
     $("#julBookHolder").show(500);
 });
 
 //Aug Books to be saved
 $("#augBookSubmit").on("click", function() {
     var book = $("#augBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#augBookHolder").prepend(bookSaved);
+    var augBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#augBookHolder").prepend(augBookSaved);
     $("#augBookHolder").show(500);
 });
 
 //Sep Books to be saved
 $("#sepBookSubmit").on("click", function() {
     var book = $("#sepBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#sepBookHolder").prepend(bookSaved);
+    var sepBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#sepBookHolder").prepend(sepBookSaved);
     $("#sepBookHolder").show(500);
 });
 
 //Oct Books to be saved
 $("#octBookSubmit").on("click", function() {
     var book = $("#octBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#octBookHolder").prepend(bookSaved);
+    var octBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#octBookHolder").prepend(octBookSaved);
     $("#octBookHolder").show(500);
 });
 
 //Nov Books to be saved
 $("#novBookSubmit").on("click", function() {
     var book = $("#novBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#novBookHolder").prepend(bookSaved);
+    var novBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#novBookHolder").prepend(novBookSaved);
     $("#novBookHolder").show(500);
 });
 
 //Dec Books to be saved
 $("#decBookSubmit").on("click", function() {
     var book = $("#decBookInput").val();
-    var bookSaved = $("<option>").append(book);
-    $("#decBookHolder").prepend(bookSaved);
+    var decBookSaved = $("<button>").addClass("button is-large bookButtons").append(book);
+    $("#decBookHolder").prepend(decBookSaved);
     $("#decBookHolder").show(500);
 });
