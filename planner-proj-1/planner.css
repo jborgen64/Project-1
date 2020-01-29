@@ -16,6 +16,7 @@ option {
 
 h1 {
     margin: 20px;
+    font-size: large;
 }
 
 .input {
@@ -29,4 +30,9 @@ h1 {
 
 #janBookHolder {
     border: none;
+}
+
+.bookButtons {
+    clear: right;
+    margin: 5px;
 }
