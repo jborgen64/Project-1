@@ -1,9 +1,120 @@
-#map {
-    width: 99% auto;
-    height: 650px;
-    margin: auto;
-    margin-top: 80px;
+/* HERO */
+section#hero {
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
+section#hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+}
 
-   
+section#hero .title {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  line-height: 4rem;
+}
+
+/* ABOUT */
+section#about h2 {
+  line-height: 3rem;
+}
+
+/* RECOMMENDATIONS */
+
+section#recommendations .card:hover {
+  box-shadow: 0 0 0 1px #209cee;
+}
+
+section#recommendations .book-menu-items .book-item {
+  width: 25%;
+}
+
+section#recommendations .book-menu-items .book-item .book-image {
+  height: 150px;
+  width: 100px;
+}
+
+section#recommendations .card-header-title {
+  justify-content: center;
+}
+
+/* PLANNER */
+
+.months {
+  display: none;
+}
+
+#bookHolder {
+  display: none;
+}
+
+option {
+  font-size: 24px;
+}
+
+#janReadIt {
+  display: none;
+}
+
+.input {
+  margin: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.bookButtons {
+  clear: right;
+  margin: 5px;
+}
+
+.bookDisp {
+  margin-top: 10px;
+}
+
+/* MAP */
+section#search #map {
+  height: 300px;
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  section#hero .title {
+    margin-top: 5rem;
+  }
+
+  section#recommendations {
+    padding: 9rem 1.5rem;
+  }
+
+  section#recommendations .book-menu-items .book-item {
+    width: 32%;
+  }
+}
+
+/* SMARTPHONES */
+@media screen and (max-width: 768px) {
+  section#hero .title {
+    margin-top: 13rem;
+  }
+
+  section#recommendations {
+    padding: 9rem 1.5rem;
+  }
+
+  section#recommendations .book-menu-items .book-item {
+    width: 100%;
+  }
+
+  .button.is-info {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
