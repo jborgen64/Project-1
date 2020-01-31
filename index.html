@@ -9,17 +9,34 @@
       rel="stylesheet"
       href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css"
     />
+
+    <!-- MapBox CDN -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <!-- Slick Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/bookicon.ico" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- CDN and Plugins for Mapbox -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
-
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
-
-    <title>Book Reso</title>
+    <title>Book Reso | Home</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -40,24 +57,348 @@
             <a class="navbar-item" href="#hero">
               Home
             </a>
+            <a class="navbar-item" href="#about">
+              About
+            </a>
             <a class="navbar-item" href="#recommendations">
               Recommendations
             </a>
-            <a class="navbar-item" href="#stores">
-              Stores
+            <a class="navbar-item" href="#planner">
+              Planner
             </a>
-            <a class="navbar-item" href="#">
-              Calendars
+            <a class="navbar-item" href="#search">
+              Stores
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container" id='map'></div>
+    <!-- Hero -->
+    <section
+      class="hero is-info is-large is-fullheight-with-navbar showcase"
+      id="hero"
+    >
+      <div class="hero-body overlay">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Ready to crush the New year?
+          </h1>
+          <h2 class="subtitle">
+            Commit to your <strong>2020 resolutions</strong> with our
+            <strong>book suggestions.</strong>
+          </h2>
+        </div>
+      </div>
+      <div class="hero-body overlay">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            "Your mind will always believe everything you tell it. Feed it hope.
+            Feed it truth. Feed it with love."
+          </h1>
+          <h2 class="subtitle">
+            - Billy Graham
+          </h2>
+        </div>
+      </div>
+      <div class="hero-body overlay">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            “It's never too late to start over. If you weren't happy with
+            yesterday, try something different today. Don't stay stuck. Do
+            better.”
+          </h1>
+          <h2 class="subtitle">
+            - Alex Elle
+          </h2>
+        </div>
+      </div>
+    </section>
 
-    <!-- maps.js -->
-    <script src="./assets/js/maps.js"></script>
+    <!-- About -->
+    <section class="hero is-white is-medium" id="about">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            About
+          </h1>
+          <h2>
+            Studies show that about <strong>60 percent</strong> of us make New
+            Year's resolutions each year--sadly only about
+            <strong>8 percent </strong>of us achieve them. Be part of the
+            <strong><i>8 percent</i></strong> by reading books that are
+            categorized based on the most common new year's resolution.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-info is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns">
+            <div class="column">
+              <i class="fas fa-brain fa-lg"></i> <br />
+              Mindset
+            </div>
+            <div class="column">
+              <i class="fas fa-money-bill fa-lg"></i> <br />
+              Finance
+            </div>
+            <div class="column">
+              <i class="fas fa-fire fa-lg"></i> <br />
+              Fitness
+            </div>
+            <div class="column">
+              <i class="fas fa-globe fa-lg"></i> <br />
+              Travel
+            </div>
+            <div class="column">
+              <i class="fas fa-book-reader fa-lg"></i> <br />
+              Learning
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="section is-medium" id="recommendations">
+      <div class="container">
+        <div class="content">
+          <h1 class="title has-text-centered">Recommendations</h1>
+          <div class="book-menu has-text-centered">
+            <a class="button is-info" data-filter="*"> All </a>
+            <a class="button is-info" data-filter=".mindset">
+              Mindset
+            </a>
+            <a class="button is-info" data-filter=".finance"> Finance </a>
+            <a class="button is-info" data-filter=".fitness"> Fitness </a>
+            <a class="button is-info" data-filter=".travel"> Travel </a>
+            <a class="button is-info" data-filter=".learning"> Learning </a>
+          </div>
+        </div>
+        <div class="content">
+          <div class="book-menu-items"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planner -->
+    <section class="hero is-white is-medium" id="planner">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Planner
+          </h1>
+          <div id="planner">
+            <div id="plannerNav">
+              <div class="tabs is-centered">
+                <ul>
+                  <li><a id="janClick">Jan</a></li>
+                  <li><a id="febClick">Feb</a></li>
+                  <li><a id="marClick">Mar</a></li>
+                  <li><a id="aprClick">Apr</a></li>
+                  <li><a id="mayClick">May</a></li>
+                  <li><a id="junClick">Jun</a></li>
+                  <li><a id="julClick">Jul</a></li>
+                  <li><a id="augClick">Aug</a></li>
+                  <li><a id="sepClick">Sep</a></li>
+                  <li><a id="octClick">Oct</a></li>
+                  <li><a id="novClick">Nov</a></li>
+                  <li><a id="decClick">Dec</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <div id="monthsContainer">
+              <div class="months" id="janDisplay">
+                <h1><strong>January</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="janBookInput" type="text" /><br />
+                <button class="button is-primary" id="janBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="janBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="febDisplay">
+                <h1><strong>February</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="febBookInput" type="text" /><br />
+                <button class="button is-primary" id="febBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="febBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="marDisplay">
+                <h1><strong>March</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="marBookInput" type="text" /><br />
+                <button class="button is-primary" id="marBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="marBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="aprDisplay">
+                <h1><strong>April</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="aprBookInput" type="text" /><br />
+                <button class="button is-primary" id="aprBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="aprBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="mayDisplay">
+                <h1><strong>May</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="mayBookInput" type="text" /><br />
+                <button class="button is-primary" id="mayBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="mayBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="junDisplay">
+                <h1><strong>June</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="junBookInput" type="text" /><br />
+                <button class="button is-primary" id="junBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="junBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="julDisplay">
+                <h1><strong>July</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="julBookInput" type="text" /><br />
+                <button class="button is-primary" id="julBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="julBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="augDisplay">
+                <h1><strong>August</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="augBookInput" type="text" /><br />
+                <button class="button is-primary" id="augBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="augBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="sepDisplay">
+                <h1><strong>September</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="sepBookInput" type="text" /><br />
+                <button class="button is-primary" id="sepBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="sepBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="octDisplay">
+                <h1><strong>October</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="octBookInput" type="text" /><br />
+                <button class="button is-primary" id="octBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="octBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="novDisplay">
+                <h1><strong>November</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="novBookInput" type="text" /><br />
+                <button class="button is-primary" id="novBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="novBookHolder"></ul>
+                </div>
+              </div>
+              <div class="months" id="decDisplay">
+                <h1><strong>December</strong></h1>
+                <h2>Type Your Books</h2>
+                <input class="input" id="decBookInput" type="text" /><br />
+                <button class="button is-primary" id="decBookSubmit">
+                  Submit
+                </button>
+
+                <div class="bookDisp">
+                  <ul id="decBookHolder"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="section is-medium" id="search">
+      <div class="content">
+        <h1 class="title has-text-centered">Search Bookstores Nearby</h1>
+      </div>
+      <div class="container" id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a
+              class="icon"
+              href="https://github.com/jborgen64/Project-1"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </p>
+          <p>
+            <strong>Book Reso</strong> by
+            <a href="https://github.com/ColeWorld314" target="_blank"
+              >Jordan Coleman,</a
+            >
+            <a href="https://github.com/jborgen64" target="_blank"
+              >Jacob Borgen,</a
+            >
+            <a href="https://github.com/ltdebelen" target="_blank"
+              >& Lawrence Adrian De Belen</a
+            >
+            <br />
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <!-- Font Awesome CDN -->
     <script
       defer
@@ -69,5 +410,19 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       src="https://code.jquery.com/jquery-3.1.1.min.js"
     ></script>
+    <!-- Smooth Scroll CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Isotope CDN -->
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <!-- MapBox CDN -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js"></script>
+    <!-- Slick-Carousel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/books.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/maps.js"></script>
+    <script src="./assets/js/planner.js"></script>
   </body>
 </html>

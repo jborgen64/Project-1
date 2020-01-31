@@ -3,21 +3,6 @@
 ## Description
 A simple web application that helps users achieve their New Year's Resolution by giving them book suggestions categorized by top New Year's Resolution.
 
-## Main Features and Functions
-* Implemented Bulma with Lux theme for great presentation.
-
-
-* Applied slick carousel and smooth scrolling for better UI transitions.
-
-
-* Suggest and filter books based on the most common new year's resolution.
-
-
-* Has a built in planner for helping in tracking book readings per month.
-
-
-* Ability to search for bookstores powered by MapBox API.
-
 ## Other Criteria/Features
 * Must use at least two server-side APIs
 
@@ -49,4 +34,3 @@ A simple web application that helps users achieve their New Year's Resolution by
 
 ## GitHub Hosted Link
 https://jborgen64.github.io/Project-1/
-
